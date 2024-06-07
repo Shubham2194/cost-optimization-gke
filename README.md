@@ -22,7 +22,7 @@ Step 1 :
  
 
 Note: Make sure to add  Kubernetes labels  in metadata section according to enviroment 
-(env=development)
+(env=dev)
 
 
 ![image](https://github.com/Shubham2194/cost-optimization-gke/assets/83746560/d28ec4ae-a295-42d5-8897-30da9005af5d)
@@ -34,7 +34,7 @@ Step 2 : Schedule the running microservices to newer node
 
 
 
-![image](https://github.com/Shubham2194/cost-optimization-gke/assets/83746560/4ee6d7d1-2e47-4813-926d-dca99bea6923)
+![image](https://github.com/Shubham2194/cost-optimization-gke/assets/83746560/45034d40-1293-48c8-9495-b7e69cc6c993)
 
 
 
