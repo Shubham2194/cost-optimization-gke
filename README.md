@@ -48,13 +48,16 @@ Step 3: Apply the changes
  - if everything works as per expectation  and pod has been scheduled to the newwe node ,we are good to go with step 5 , if not then headover to step 1 and resize the node pool to bit higer configuration.
 
 Step 5: Condon the node 
+
  - kubectl cordon  <node name >
+ 
  This will make your Node cordon , which do as follows
 
 * New pods are not scheduled on the node.
 * Existing pods continue to run.
 
 Step 6 : Drain and delte the Node
+
 - kubectl drain <node name> --ignore-daemonsets --delete-emptydir-data
 
 * Marks the node as unschedulable (cordons the node).
