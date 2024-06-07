@@ -47,7 +47,7 @@ Step 3: Apply the changes
  Step 4 : Look at the  READINESS GATES and LIVENESS GATES
  - if everything works as per expectation  and pod has been scheduled to the newwe node ,we are good to go with step 5 , if not then headover to step 1 and resize the node pool to bit higer configuration.
 
-Step 5: Condon the node 
+Step 5: Cordon the node 
 
  - kubectl cordon  < node name >
  
