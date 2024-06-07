@@ -41,7 +41,10 @@ Step 2 : Schedule the running microservices to newer node
 Step 3: Apply the changes
 - Either apply the changes directly on k8s env or Run the CI/CD (if configured)
 - Look after the pods in the Cluster
-  Kuberctl get pods -w
+
+  Kubectl get pods -w
+  
+  kubectl get pods -o wide (see the nodes where is it scheduled)
 
 
  Step 4 : Look at the  READINESS GATES and LIVENESS GATES
