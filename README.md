@@ -57,15 +57,20 @@ Step 5: Cordon the node
  This will make your Node cordon , which do as follows
 
 * New pods are not scheduled on the node.
+  
 * Existing pods continue to run.
 
-Step 6 : Drain and delte the Node
+Step 6 : Drain and delete the Node
 
 - kubectl drain < node name > --ignore-daemonsets --delete-emptydir-data
+ 
+ This will drain you node , which do as follows
 
-* Marks the node as unschedulable (cordons the node).
+
 * Evicts all pods from the node, except for DaemonSets and mirror pods.
-* 
+  
+* Pods are gracefully terminated and rescheduled on other nodes, if presnet on the node.
+  
 - kubectl delete node <node name>
 
 
