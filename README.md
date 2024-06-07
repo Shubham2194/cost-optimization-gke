@@ -49,7 +49,7 @@ Step 3: Apply the changes
 
 Step 5: Condon the node 
 
- - kubectl cordon  <node name >
+ - kubectl cordon  < node name >
  
  This will make your Node cordon , which do as follows
 
@@ -58,7 +58,7 @@ Step 5: Condon the node
 
 Step 6 : Drain and delte the Node
 
-- kubectl drain <node name> --ignore-daemonsets --delete-emptydir-data
+- kubectl drain < node name > --ignore-daemonsets --delete-emptydir-data
 
 * Marks the node as unschedulable (cordons the node).
 * Evicts all pods from the node, except for DaemonSets and mirror pods.
