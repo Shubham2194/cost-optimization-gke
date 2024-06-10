@@ -71,7 +71,7 @@ Step 6 : Drain and delete the Node
   
 * Pods are gracefully terminated and rescheduled on other nodes, if presnet on the node.
   
-- kubectl delete node <node name>
+- kubectl delete node < node name >
 
 
 ![image](https://github.com/Shubham2194/cost-optimization-gke/assets/83746560/8f9e2495-47a2-4628-9e14-8073fd6ce46f)
